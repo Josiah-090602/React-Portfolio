@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import SocialLinksSection from "../SocialLinks";
+import { Introduction } from "../Introduction";
 
 export default function HeroSection() {
   return (
@@ -13,9 +14,9 @@ export default function HeroSection() {
           Hello, I'm <span className="font-semibold">Josiah</span>
         </h1>
 
-        <p className="text-l md:text-xl text-muted-foreground  font-poppins font-light">
-          Front End Developer, System Analyst & UI/UX Designer
-        </p>
+        <Introduction
+          words={["UI/UX Designer", "Front-end Developer", "System Analyst"]}
+        />
 
         <div className="flex flex-col  sm:flex-row gap-6 justify-center">
           <Button

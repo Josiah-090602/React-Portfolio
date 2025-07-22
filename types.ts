@@ -9,3 +9,12 @@ export type LinksType = {
   icon: React.ReactNode;
   href: string;
 };
+
+export type experienceType = {
+  id: number;
+  title: string;
+  company: string;
+  period: string;
+  description: string;
+  location: string;
+};

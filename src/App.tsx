@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/sections/HeroSection";
 import AboutSection from "@/components/sections/AboutSection";
 import { ThemeProvider } from "./components/theme-provider";
+import ExperienceSection from "@/components/sections/ExperienceSection";
 export const App = () => {
   return (
     <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
@@ -10,7 +11,9 @@ export const App = () => {
 
         <main className="">
           <HeroSection />
+
           <AboutSection />
+          <ExperienceSection />
         </main>
       </div>
     </ThemeProvider>

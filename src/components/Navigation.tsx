@@ -18,7 +18,7 @@ import { ModeToggle } from "./mode-toggle";
 const NavigationList: NavigationListTypes[] = [
   { name: "Hero", href: "#home", icon: <GoFlame /> },
   { name: "About", href: "#about", icon: <GoPerson /> },
-  { name: "Projects", href: "#projects", icon: <GoBriefcase /> },
+  { name: "Experience", href: "#experience", icon: <GoBriefcase /> },
   { name: "Skills", href: "#techstack", icon: <GoStack /> },
   { name: "Contact", href: "#contact", icon: <GoMail /> },
 ];
@@ -28,7 +28,7 @@ export default function Navigation() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "about", "projects", "techstack", "contact"];
+      const sections = ["home", "about", "experience", "techstack", "contact"];
       const scrollPosition = window.scrollY + window.innerHeight / 2;
 
       for (const section of sections) {
@@ -113,7 +113,7 @@ function NavigationListItem({
           onClick={onClick}
           className={`hover:bg-zinc-700 group relative flex items-center justify-center w-12 h-12 transition-all duration-300 rounded-full shadow-md hover:shadow-lg border-1 active:scale-95 active:shadow-sm ${
             isActive
-              ? "bg-primary text-accent hover:text-foreground border-primary shadow-lg "
+              ? "bg-primary text-accent hover:text-white border-primary shadow-lg "
               : " bg-background hover:bg-primary hover:text-white border-gray-200 hover:border-primary hover:scale-105"
           }`}
         >

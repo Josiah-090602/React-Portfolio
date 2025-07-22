@@ -26,7 +26,7 @@ export default function SocialLinksSection() {
           <a
             href={link.href}
             target="_blank"
-            className="font-extralight text-sm opacity-50 hover:opacity-100 flex items-center justify-center gap-2 transition-all duration-300"
+            className="font-extralight text-sm opacity-60 hover:opacity-100 flex items-center justify-center gap-2 transition-all duration-300"
           >
             {link.icon}
             {link.name}
