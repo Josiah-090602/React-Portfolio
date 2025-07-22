@@ -1,4 +1,4 @@
-import type { NavigationListTypes } from "../../types";
+import type { NavigationListTypes } from "../types";
 import { useState, useEffect } from "react";
 import {
   GoStack,

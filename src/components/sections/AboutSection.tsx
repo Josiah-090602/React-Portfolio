@@ -24,7 +24,7 @@ export default function AboutSection() {
                 href="/Viernes__Josiah__Resume.pdf"
                 download="Josiah_Viernes_Resume.pdf"
               >
-                <GoDownload /> Download Resume
+                <GoDownload /> Download CV
               </a>
             </Button>
           </div>

@@ -1,5 +1,5 @@
 import { BiLogoGithub, BiLogoLinkedin, BiLogoInstagram } from "react-icons/bi";
-import type { LinksType } from "types";
+import type { LinksType } from "@/types";
 
 const Links: LinksType[] = [
   {

@@ -1,14 +1,15 @@
-import type { experienceType } from "types";
+import type { experienceType } from "@/types";
 
 export default function ExperienceSection() {
   const experiences: experienceType[] = [
     {
       id: 1,
-      title: "StudentIntern",
+
+      title: "System Analyst",
       company: "OnDemand Innovation, LLC",
-      period: "Feb 24 - May 2024",
+      period: "January 2025 - Present ",
       description:
-        " Contributed to building key frontend pages to some System Projects",
+        " Collaborating with stakeholders to gather requirements and analyze system needs for various projects.",
       location: "Remote",
     },
     {
@@ -22,11 +23,11 @@ export default function ExperienceSection() {
     },
     {
       id: 3,
-      title: "System Analyst",
+      title: "StudentIntern",
       company: "OnDemand Innovation, LLC",
-      period: "January 2025 - Present ",
+      period: "Feb 24 - May 2024",
       description:
-        " Collaborating with stakeholders to gather requirements and analyze system needs for various projects.",
+        " Contributed to building key frontend pages to some System Projects",
       location: "Remote",
     },
   ];

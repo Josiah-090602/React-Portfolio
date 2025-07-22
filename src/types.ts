@@ -18,3 +18,10 @@ export type experienceType = {
   description: string;
   location: string;
 };
+
+export type skillTypes = {
+  id: number;
+  name: string;
+  designation: string;
+  image: React.ReactNode;
+};
