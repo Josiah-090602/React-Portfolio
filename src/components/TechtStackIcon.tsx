@@ -5,10 +5,16 @@ import {
   BiLogoHtml5,
   BiLogoCss3,
   BiLogoBootstrap,
-  BiLogoNodejs,
   BiLogoJavascript,
   BiLogoReact,
+  BiLogoGit,
+  BiLogoGithub,
 } from "react-icons/bi";
+import { FaFigma } from "react-icons/fa";
+
+import { FaDotCircle } from "react-icons/fa";
+import { RiNextjsLine } from "react-icons/ri";
+
 import { AnimatedTooltip } from "./ui/animated-tooltip";
 import type { skillTypes } from "@/types";
 
@@ -39,9 +45,9 @@ export const stacklist: skillTypes[] = [
   },
   {
     id: 5,
-    name: "Node.js",
+    name: "Next Js",
     designation: "",
-    image: <BiLogoNodejs className="w-full h-full" />,
+    image: <RiNextjsLine className="w-full h-full" />,
   },
   {
     id: 6,
@@ -61,6 +67,31 @@ export const stacklist: skillTypes[] = [
     designation: "",
     image: <BiLogoCss3 className="w-full h-full" />,
   },
+  {
+    id: 9,
+    name: "Git",
+    designation: "",
+    image: <BiLogoGit className="w-full h-full" />,
+  },
+  {
+    id: 10,
+    name: "GitHub",
+    designation: "",
+    image: <BiLogoGithub className="w-full h-full" />,
+  },
+  {
+    id: 11,
+    name: "Figma",
+    designation: "",
+    image: <FaFigma className="w-10 h-full" />,
+  },
+  {
+    id: 12,
+    name: "Outsystems",
+    designation: "",
+    image: <FaDotCircle className="w-15 h-full" />,
+  },
+
   // Add more technologies as needed
 ];
 

@@ -14,6 +14,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { ModeToggle } from "./mode-toggle";
+import { useTheme } from "./theme-provider";
 
 const NavigationList: NavigationListTypes[] = [
   { name: "Hero", href: "#home", icon: <GoFlame /> },
@@ -67,12 +68,20 @@ export default function Navigation() {
       });
     }
   };
+  const { theme } = useTheme();
 
   return (
     <TooltipProvider>
       <nav className="fixed left-6 top-1/2 transform -translate-y-1/2 z-50">
-        <div className="flex flex-col items-center">
-          <span className="mb-4">
+        <div className="flex flex-col items-center ">
+          <span className="mb-4 flex flex-col items-center justify-center gap-3">
+            <div className="relative flex items-center justify-center w-12 h-12 rounded-full overflow-hidden">
+              <img
+                src={theme === "dark" ? "/Dark Logo.png" : "/Light Logo.png"}
+                alt="Logo"
+                className="rounded-full w-8 h-8 object-cover"
+              />
+            </div>
             <ModeToggle />
           </span>
           {NavigationList.map((item, index) => (

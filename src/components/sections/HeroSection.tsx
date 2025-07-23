@@ -25,15 +25,15 @@ export default function HeroSection() {
               variant="default"
               size="lg"
               className="bg-foreground text-background hover:bg-foreground/80 transition-colors"
-              onClick={() => (window.location.href = "#projects")}
+              onClick={() => (window.location.href = "#experience")}
             >
-              View my Works
+              View my Experiences
             </Button>
             <Button
               variant="default"
               size="lg"
               onClick={() => (window.location.href = "#contact")}
-              className="bg-background text-foreground hover:bg-zinc-500/80 transition-colors border-foreground border"
+              className="bg-background text-foreground hover:bg-zinc-500/20 transition-colors border-foreground border"
             >
               Get in Touch
             </Button>

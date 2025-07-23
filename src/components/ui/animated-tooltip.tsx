@@ -64,11 +64,11 @@ export const AnimatedTooltip = ({
                   rotate: rotate,
                   whiteSpace: "nowrap",
                 }}
-                className="absolute border-1 -top-16 left-1/2 z-50 flex -translate-x-1/2 flex-col items-center justify-center rounded-md bg-background px-4 py-2 text-xs shadow-xl"
+                className="absolute border-1 -top-12 left-[42%] z-50 flex -translate-x-1/2 flex-col items-center justify-center rounded-md bg-background px-4 py-2 text-xs shadow-xl"
               >
-                <div className="absolute inset-x-0 -bottom-px z-1 h-px w-[20%] bg-gradient-to-r from-transparent via-emerald-500 to-transparent" />
-                <div className="absolute -bottom-px left-10 z-30 h-px w-[40%] bg-gradient-to-r from-transparent via-sky-500 to-transparent" />
-                <div className="relative z-30 text-base font-bold text-white">
+                <div className="absolute  -bottom-px z-1 h-0.5 w-[20%] rounded-full bg-accent-foreground animate-pulse" />
+
+                <div className="relative z-30 text-sm font-semibold text-accent-foreground/80">
                   {item.name}
                 </div>
                 <div className="text-xs text-white">{item.designation}</div>
@@ -77,7 +77,7 @@ export const AnimatedTooltip = ({
           </AnimatePresence>
           <section
             onMouseMove={handleMouseMove}
-            className="!m-0 h-25 w-25 p-4 rounded-xl flex justify-center items-center border-1 border-white object-cover object-top  transition duration-500 group-hover:z-30 group-hover:scale-105"
+            className="!m-0 h-25 w-25 p-4 rounded-xl text-accent-foreground/60 hover:text-accent-foreground flex justify-center items-center border-1 hover:bg-accent/40 dark:border-accent object-cover object-top  transition duration-500 group-hover:z-30 group-hover:scale-105"
           >
             {item.image}
           </section>
