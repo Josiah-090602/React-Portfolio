@@ -64,7 +64,7 @@ export const AnimatedTooltip = ({
                   rotate: rotate,
                   whiteSpace: "nowrap",
                 }}
-                className="absolute border-1 -top-12 left-[42%] z-50 flex -translate-x-1/2 flex-col items-center justify-center rounded-md bg-background px-4 py-2 text-xs shadow-xl"
+                className="absolute border-1 -top-12 left-[33%] z-50 flex -translate-x-1/2 flex-col items-center justify-center rounded-md bg-background px-4 py-2 text-xs shadow-xl"
               >
                 <div className="absolute  -bottom-px z-1 h-0.5 w-[20%] rounded-full bg-accent-foreground animate-pulse" />
 

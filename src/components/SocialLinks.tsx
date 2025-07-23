@@ -20,13 +20,13 @@ const Links: LinksType[] = [
 ];
 export default function SocialLinksSection() {
   return (
-    <div className="flex gap-3 justify-center mt-8 absolute top-2 right-11">
+    <div className="flex gap-3 justify-center absolute mt-8 top-2 right-11 ">
       {Links.map((link, index) => (
         <div key={index} className="flex items-center gap-3">
           <a
             href={link.href}
             target="_blank"
-            className="font-extralight text-sm opacity-60 hover:opacity-100 flex items-center justify-center gap-2 transition-all duration-300"
+            className=" font-extralight text-sm opacity-60 hover:opacity-100 flex items-center justify-center gap-2 transition-all duration-300"
           >
             {link.icon}
             {link.name}
