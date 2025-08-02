@@ -6,14 +6,15 @@ import ExperienceSection from "@/components/sections/ExperienceSection";
 import TechStackSection from "./components/sections/TechStack";
 import ContactSection from "./components/sections/ContactSection";
 import SocialLinksSection from "./components/SocialLinks";
+import Footer from "./components/Footer";
 export const App = () => {
   return (
     <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
       <div className="min-h-screen bg-gray-50">
         <SocialLinksSection />
+        <Navigation />
 
         <main>
-          <Navigation />
           <HeroSection />
 
           <AboutSection />
@@ -22,6 +23,7 @@ export const App = () => {
           <ContactSection />
         </main>
       </div>
+      <Footer />
     </ThemeProvider>
   );
 };

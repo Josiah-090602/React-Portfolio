@@ -1,6 +1,7 @@
 import React from "react";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { ContactCard } from "../ContactCards";
+import Footer from "../Footer";
 
 const ContactSection = () => {
   return (
@@ -17,13 +18,6 @@ const ContactSection = () => {
           collaborate, or just want to say hi, feel free to reach out.
         </p>
         <ContactCard />
-
-        <a
-          href="mailto:your-email@example.com"
-          className="text-lg text-foreground font-semibold"
-        >
-          <div>Reach out via Email</div>
-        </a>
       </div>
     </section>
   );

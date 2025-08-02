@@ -31,6 +31,7 @@ export const HoverEffect = ({
           className="relative group  block p-2 h-full w-full "
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
+          target="_blank"
         >
           <AnimatePresence>
             {hoveredIndex === idx && (
@@ -49,18 +50,18 @@ export const HoverEffect = ({
               />
             )}
           </AnimatePresence>
-          <Card className="bg-background transition-colors duration-300 border-1 border-accent-foreground">
+          <Card className="bg-background transition-colors  duration-300 border-1 border-accent-foreground">
             {item.icon && (
-              <div className="flex justify-center items-center mb-4">
-                <span className="text-3xl text-accent-foreground">
+              <div className="flex justify-center items-center mb-4 ">
+                <span className="text-3xl text-accent-foreground ">
                   {item.icon}
                 </span>
               </div>
             )}
-            <CardTitle className="text-accent-foreground">
+            <CardTitle className="text-accent-foreground ">
               {item.title}
             </CardTitle>
-            <CardDescription className="text-accent-foreground/60">
+            <CardDescription className="text-accent-foreground/60 ">
               {item.description}
             </CardDescription>
           </Card>
@@ -113,7 +114,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm",
+        "mt-5 text-zinc-400 tracking-wide leading-relaxed text-sm",
         className
       )}
     >
