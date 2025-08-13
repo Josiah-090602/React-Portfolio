@@ -1,7 +1,4 @@
-import React from "react";
-import { MdOutlineMailOutline } from "react-icons/md";
 import { ContactCard } from "../ContactCards";
-import Footer from "../Footer";
 
 const ContactSection = () => {
   return (

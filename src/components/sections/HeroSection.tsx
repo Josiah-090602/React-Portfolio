@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
-import SocialLinksSection from "../SocialLinks";
 import { Introduction } from "../Introduction";
 import HeroBackground from "../HeroBackground";
+import SocialLinksSection from "../SocialLinks";
 
 export default function HeroSection() {
   return (
@@ -10,11 +10,12 @@ export default function HeroSection() {
       className="static min-h-screen flex items-center justify-center bg-background"
     >
       <HeroBackground>
-        <SocialLinksSection />
         <div className="text-center max-w-4xl flex flex-col mx-auto px-6 gap-6 z-10">
           <h1 className="text-3xl md:text-5xl font-light text-foreground font-montserrat tracking-tight">
             Hello, I'm <span className="font-semibold">Josiah</span>
           </h1>
+
+          <SocialLinksSection />
 
           <Introduction
             words={["UI/UX Designer", "Front-end Developer", "System Analyst"]}

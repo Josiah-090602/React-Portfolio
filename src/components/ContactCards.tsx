@@ -1,4 +1,3 @@
-import { Link } from "lucide-react";
 import { HoverEffect } from "../components/ui/card-hover-effect";
 import { MdLocationPin, MdOutlineEmail, MdPhone } from "react-icons/md";
 

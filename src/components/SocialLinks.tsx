@@ -20,7 +20,7 @@ const Links: LinksType[] = [
 ];
 export default function SocialLinksSection() {
   return (
-    <div className="flex gap-3 justify-center absolute mt-8 top-2 right-11 ">
+    <div className="flex gap-3 justify-center absolute mt-8 top-2 right-11">
       {Links.map((link, index) => (
         <div key={index} className="flex items-center gap-3">
           <a
