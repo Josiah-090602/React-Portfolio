@@ -14,7 +14,6 @@ export default function HeroSection() {
           <h1 className="text-3xl md:text-5xl font-light text-foreground font-montserrat tracking-tight">
             Hello, I'm <span className="font-semibold">Josiah</span>
           </h1>
-
           <SocialLinksSection />
 
           <Introduction
